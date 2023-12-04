@@ -1,0 +1,65 @@
+html {
+  font-size: 16px;
+  font-family: sans-serif;
+}
+
+body {
+  background-color: steelblue;
+  box-shadow: 0 0 12px -2px black;
+  /* height: 100vh; */
+  padding: 0;
+  max-width: 100%;
+  margin: 0 auto;
+}
+
+a {
+  color: lightgoldenrodyellow;
+  text-decoration: none;
+  font-size: x-large;
+  margin: 0 5px;
+}
+
+nav {
+  box-shadow: 0 0 12px -2px black;
+  position: fixed;
+  left: 0;
+  right: 0;
+  align-items: center;
+  background-color: #333333;
+  color: lightgoldenrodyellow;
+  display: flex;
+  height: 80px;
+  padding: 10px;
+  display: flex;
+  justify-content: space-between;
+}
+
+main {
+  min-height: 100vh;
+  padding: 85px 24px 96px;
+  box-shadow: 0 0 12px -2px black;
+  color: lightgoldenrodyellow;
+  font-family: "Open Sans", sans-serif;
+  font-size: 25px;
+}
+
+.active {
+  border-bottom: 1px solid goldenrod;
+}
+
+main > img {
+  /* height: 500px; */
+  width: 300px;
+  float: right;
+  margin: 10px 0 10px 10px;
+}
+
+main .quote {
+  font-family: "Satisfy", cursive;
+  color: lightgoldenrodyellow;
+  font-size: 50px;
+  font-weight: 100;
+  text-shadow: 1px 1px 2px black;
+  text-align: center;
+  margin-top: 4em;
+}
