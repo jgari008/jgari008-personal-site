@@ -1,3 +1,7 @@
+* {
+  box-sizing: border-box;
+}
+
 html {
   font-size: 16px;
   font-family: sans-serif;
@@ -28,6 +32,8 @@ nav {
   color: lightgoldenrodyellow;
   height: 80px;
   padding: 10px;
+  display: flex;
+  justify-content: space-between;
 }
 
 main {
@@ -74,7 +80,7 @@ section {
 }
 
 .project {
-  width: 90%;
+  width: calc(100% - 6em);
   background: #fafafa;
   color: #222;
   box-shadow: 0 3px 6px -2px #ccc;
@@ -96,5 +102,57 @@ section {
 }
 
 .projectContent img {
-  width: 50% ;
+  width: 50%;
+}
+
+form {
+  font-size: 25px;
+  max-width: 660px;
+  margin: auto;
+}
+
+input {
+  width: 100%;
+  height: 30px;
+  font-size: 18px;
+}
+
+textarea {
+  width: 100%;
+  font-size: 15px;
+}
+
+#submit {
+  font-size: 15px;
+  background-color: #fafafa;
+  border-radius: 5px;
+  box-shadow: 0 0 12px -2px black;
+}
+
+@media screen and (max-width: 625px) {
+  .project {
+    width: 100%;
+  }
+
+  .projectContent {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .projectContent img {
+    width: 100% !important;
+    margin-left: 0 !important;
+    margin-right: 0 !important;
+  }
+
+  main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+
+  #form {
+    margin: 0;
+  }
 }
